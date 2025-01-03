@@ -16,8 +16,7 @@ const Card = ({ product }) => {
       price: Math.round(product.price * 85),
       rating: product.rating,
       thumbnail: product.thumbnail,
-      quantity: product.minimumOrderQuantity,
-      minimumOrderQuantity: product.minimumOrderQuantity,
+      quantity: 1,
     }
 
     return newProduct;
@@ -27,7 +26,7 @@ const Card = ({ product }) => {
     e.stopPropagation();
     const newProduct = productForCart(product);
     dispatch(add(newProduct));
-    toast.success("Added to cart");
+    toast.success("Product added to cart");
   }
 
   return (

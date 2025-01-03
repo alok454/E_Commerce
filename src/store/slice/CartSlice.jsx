@@ -39,7 +39,7 @@ const CartSlice = createSlice({
 
     minus: (state, action) => {
       state.products.map((product)=>{
-        if(product.id===action.payload && product.quantity > product.minimumOrderQuantity){
+        if(product.id===action.payload && product.quantity > 1){
           return {...product, quantity: product.quantity--};
         }
         return product;

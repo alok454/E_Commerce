@@ -1,5 +1,5 @@
-import { CiCircleMinus } from "react-icons/ci";
-import { CiCirclePlus } from "react-icons/ci";
+import { CiSquareMinus } from "react-icons/ci";
+import { CiSquarePlus } from "react-icons/ci";
 import { IoMdStar } from "react-icons/io";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { useDispatch, useSelector } from "react-redux";
@@ -52,9 +52,9 @@ const Cart = () => {
             <div className="w-full sm:w-[40%] md:w-[25%] h-[30%] sm:h-full flex items-center justify-around">
               <div className="flex flex-col items-center text-xl">
                 <div className="flex items-center  gap-1 ">
-                  <CiCircleMinus onClick={()=>handleMinus(product.id)} className="cursor-pointer text-[1.6rem]" />
+                  <CiSquareMinus onClick={()=>handleMinus(product.id)} className="cursor-pointer text-[1.6rem]" />
                   <span className="text-[1.3rem]">{product.quantity}</span>
-                  <CiCirclePlus onClick={()=>handlePlus(product.id)} className="cursor-pointer text-[1.6rem]" />
+                  <CiSquarePlus onClick={()=>handlePlus(product.id)} className="cursor-pointer text-[1.6rem]" />
                 </div>
                 <div className="text-sm">quantity</div>
               </div>

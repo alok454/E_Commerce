@@ -1,6 +1,6 @@
 # E-Commerce Cart Project
 
-A simple e-commerce cart application that allows users to browse products, add them to their cart, update quantities, and proceed to checkout. This project demonstrates essential e-commerce functionality using modern web technologies.
+A simple e-commerce cart application that allows users to browse products, add them to their cart, update quantities. This project demonstrates essential e-commerce functionality using modern web technologies.
 
 ## Features
 

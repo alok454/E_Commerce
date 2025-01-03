@@ -20,7 +20,7 @@ const Product = () => {
       price: Math.round(product.price * 85),
       rating: product.rating,
       thumbnail: product.thumbnail,
-      quantity: product.minimumOrderQuantity,
+      quantity: 1,
     }
 
     return newProduct;
@@ -29,7 +29,7 @@ const Product = () => {
   const handleAddCart = (product) => {
     const newProduct = productForCart(product);
     dispatch(add(newProduct));
-    toast.success("Added to cart");
+    toast.success("Product added to cart");
   }
 
   const fetchAPI = async () => {
@@ -74,9 +74,6 @@ const Product = () => {
                 <IoMdStar size={15} />
               </div>
               <p className="text-sm font-medium">{product.description}</p>
-              <p className="border-2 rounded-md border-[#cacaca] px-2 text-[#797979] font-semibold">
-                Minimum order quantity: {product.minimumOrderQuantity}
-              </p>
               <button
                 onClick={()=>handleAddCart(product)} 
                 className="bg-black border-2 border-black hover:bg-white hover:text-black text-white font-semibold px-3 py-2 rounded"
